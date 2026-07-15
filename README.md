@@ -1,76 +1,35 @@
-Liver Cirrhosis Prediction System
 
-This project is a Machine Learning web application that predicts the likelihood of liver cirrhosis using patient health and alcohol consumption data. The model is built using Logistic Regression and deployed through a Flask web application, allowing users to enter medical parameters and receive an instant prediction.
+# 🧬 Revolutionizing Liver Care
 
-Features
-Predicts the likelihood of liver cirrhosis.
-User-friendly web interface built with Flask.
-Trained using Logistic Regression.
-Handles imbalanced datasets using SMOTE.
-Uses patient health parameters for prediction.
-Provides real-time prediction results.
+## 🩺 Liver Cirrhosis Prediction Web Application
 
+This project is a **Flask-based web application** that predicts whether a patient is likely to have **liver cirrhosis** based on clinical input parameters. It uses a **machine learning model trained on real healthcare data** to provide real-time predictions.
 
-Technologies Used
-Python
-Flask
-Pandas
-NumPy
-Scikit-learn
-SMOTE (Imbalanced-learn)
-HTML
-CSS
-Pickle
+---
 
+## 📌 Key Features
+- 🔎 Simple, interactive form for patient data entry
+- 🤖 Backend ML model trained using Scikit-learn
+- 🕒 Instant prediction: "Likely" or "Unlikely" to have liver cirrhosis
+- 📊 Uses Pandas, Seaborn, and XGBoost for data processing and modeling
+- ⚙️ Easily deployable locally
+  
+---
 
-Input Parameters
-Age
-Duration of Alcohol Consumption (Years)
-Quantity of Alcohol Consumption (Quarters/Day)
-Total Cholesterol (TCH)
-Triglycerides (TG)
-LDL
-HDL
-Hemoglobin
-SGOT/AST
-SGPT/ALT
+## 📁 Project Structure
 
+liver-care/
+├── app.py # Flask app for serving the web interface
+├── model.py # Python script to train and export the ML model
+├── model.pkl # Saved ML model (generated from model.py)
+├── HealthCareData.xlsx # Dataset used for training
+├── templates/
+  └── index.html # HTML form for user input
+  |__ result.html
+├── static/ # Optional: for images, CSS, etc.
+└── README.md # This documentation file
 
-
-Machine Learning Workflow
-Load and clean the healthcare dataset.
-Handle missing values and normalize labels.
-Balance the dataset using SMOTE.
-Train a Logistic Regression model.
-Save the trained model using Pickle.
-Deploy the model using Flask for real-time predictions.
-
-Project Structure
-Liver-Cirrhossis-main/
-│── project files/
-│   ├── app.py
-│   ├── model.py
-│   ├── model.pkl
-│   ├── HealthCareData.xlsx
-│   ├── templates/
-│   └── static/
-│
-├── training/
-├── document/
-└── Demo video/
-
-
-
-GitHub Topics :
-machine-learning
-python
-flask
-logistic-regression
-healthcare
-liver-cirrhosis
-scikit-learn
-prediction-system
-medical-ai
-smote
-
-
+ ## required commands
+- pip install flask pandas scikit-learn matplotlib seaborn xgboost imbalanced-leam
+- python model.py
+- python app.py Visit http://127.0.0.1:5000 in your browser.
