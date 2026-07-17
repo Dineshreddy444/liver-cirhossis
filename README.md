@@ -32,4 +32,4 @@ liver-care/
  ## required commands
 - pip install flask pandas scikit-learn matplotlib seaborn xgboost imbalanced-leam
 - python model.py
-- 
+  
